@@ -27,9 +27,9 @@ function Footer() {
         <div className="footer-section">
           <h3>Follow</h3>
           <div className="social-icons">
-            <a href="#" aria-label="Instagram">Instagram</a>
-            <a href="#" aria-label="Facebook">Facebook</a>
-            <a href="#" aria-label="Youtube">Youtube</a>
+            <a href="https://www.instagram.com/mystiqueshutters/" aria-label="Instagram">Instagram</a>
+            {/* <a href="" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Youtube">Youtube</a> */}
           </div>
         </div>
       </div>
