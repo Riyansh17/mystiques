@@ -11,6 +11,7 @@ function PortfolioDetail({ image }) {
     setCurrentImageIndex(index);
   };
 
+  
   const handleCloseModal = () => {
     setSelectedDetailImage(null);
   };
