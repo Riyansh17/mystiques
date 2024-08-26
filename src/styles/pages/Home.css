@@ -36,9 +36,16 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
 }
-
-/* Add styles for intro and services sections */
-.intro, .services {
+.services {
+    padding: 50px 20px;
+    background-image: url(/public/assets/images/scover.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro{
     padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -50,9 +57,12 @@
 }
 
 .service-grid {
+    max-width: 1200px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    justify-content: center;
 }
 
 .service-card {

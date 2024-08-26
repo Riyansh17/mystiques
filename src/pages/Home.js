@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/pages/Home.css';
+import Testimonial from '../components/Testimonial';
 
 function Home() {
   return (
@@ -27,17 +27,27 @@ function Home() {
       <section className="services">
         <h2>Our Services</h2>
         <div className="service-grid">
-          <Link to="/wedding" className="service-card">
-            <h3>Wedding Photography</h3>
-          </Link>
-          <Link to="/pre-wedding" className="service-card">
-            <h3>Pre-Wedding Shoots</h3>
-          </Link>
-          <Link to="/film" className="service-card">
-            <h3>Film Photography</h3>
-          </Link>
+          <div className="service-card">
+            <h3>Weddings</h3>
+            <p>Capturing timeless moments of love and celebration on your special day.</p>
+          </div>
+          <div className="service-card">
+            <h3>Portraits</h3>
+            <p>Creating unique and personalized portraits that reflect your true essence.</p>
+          </div>
+          <div className="service-card">
+            <h3>Commercial Shoot</h3>
+            <p>Showcasing style and elegance with stunning fashion photography.</p>
+          </div>
+          <div className="service-card">
+            <h3>Films</h3>
+            <p>Telling captivating stories through creative and thought-provoking cinematic images.</p>
+          </div>
         </div>
       </section>
+      <section className='testimonial'>
+    <Testimonial />
+  </section>
     </div>
   );
 }
