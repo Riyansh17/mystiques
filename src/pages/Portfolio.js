@@ -5,7 +5,7 @@ import PortfolioDetail from '../components/PortfolioDetail';
 import '../styles/pages/Portfolio.css';
 import portfolioImages from '../assets/Data/portfolioImages';
 
-const categories = ['wedding', 'Pre-wed', 'event'];
+const categories = ['wedding', 'Prewedding', 'event'];
 
 function Portfolio() {
   const [selectedImage, setSelectedImage] = useState(null);

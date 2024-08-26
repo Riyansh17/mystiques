@@ -22,7 +22,6 @@
   font-size: clamp(24px, 5vw, 36px);
   color: #fff;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 

@@ -10,9 +10,9 @@ function Contact() {
       <div className="contact-content">
         <div className="contact-info">
           <h2>Get in Touch</h2>
-          <p>Email: info@mystiqueshutters.com</p>
-          <p>Phone: +1 (555) 123-4567</p>
-          <p>Address: 123 Photography Lane, New York, NY 10001</p>
+          <p>Email: mystiqueshutters@gmail.com</p>
+          <p>Phone: +91-70145-39810</p>
+          <p>Address: Udaipur, Rajasthan 313001</p>
         </div>
         <ContactForm />
       </div>

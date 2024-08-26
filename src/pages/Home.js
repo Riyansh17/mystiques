@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/pages/Home.css';
 import Testimonial from '../components/Testimonial';
+import Contact from '../components/Contact';
 
 function Home() {
   return (
@@ -48,6 +49,7 @@ function Home() {
       <section className='testimonial'>
     <Testimonial />
   </section>
+  <Contact />
     </div>
   );
 }
