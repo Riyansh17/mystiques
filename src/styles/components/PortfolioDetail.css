@@ -1,18 +1,6 @@
-.main-image h2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #fff;
-  padding: 10px;
-}
-
 .main-image {
   width: 100%;
-  height: 600px;
+  height: 60vh;
   overflow: hidden;
   margin-bottom: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -25,16 +13,29 @@
   object-fit: cover;
 }
 
+.main-image h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: clamp(24px, 5vw, 36px);
+  color: #fff;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 .thumbnail-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 15px;
 }
 
 .thumbnail-grid img {
   width: 100%;
-  height: 200px;
-  object-fit: contain;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   transition: transform 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -45,18 +46,10 @@
 
 @media (max-width: 768px) {
   .main-image {
-    height: 400px;
+    height: 40vh;
   }
 
   .thumbnail-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
-
-  .thumbnail-grid img {
-    height: 150px;
-  }
-}
-
-.portfolio-center h2 {
-  z-index: 1;
 }
